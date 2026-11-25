@@ -1,1 +1,19 @@
-.idea
+# CS3006 A6 -- save this file as .gitignore at the top of your repository
+# MapReduce intermediate and output files
+mrtmp.*
+824-mrinput-*.txt
+diff.out
+# local test logs from checkall.sh
+logs/
+# compiled binaries and test binaries
+*.test
+*.out
+wc
+ii
+wcbin
+iibin
+# editor and OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store

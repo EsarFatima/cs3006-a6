@@ -1,0 +1,10 @@
+CS3006 A6 Machine Declaration
+generated: 2026-11-25 11:11 PKT
+os:        Linux 6.6.87.2-microsoft-standard-WSL2
+wsl2:      yes
+distro:    Ubuntu 24.04.3 LTS
+arch:      x86_64
+cores:     8
+go:        go1.22.2
+git:       git version 2.43.0
+machine: Intel Core i5-10310U, 4 cores / 8 logical CPUs, 16 GB RAM, WSL2 Ubuntu 24.04

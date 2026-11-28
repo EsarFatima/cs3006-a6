@@ -7,7 +7,9 @@ import (
 	"strconv"
 )
 
-// Sum numbers from channel nums and output sum to out.
+// Sum numbers from channel `nums` and output sum to `out`.
+// You should only output to `out` once.
+// Do NOT modify function signature.
 func sumWorker(nums chan int, out chan int) {
 	total := 0
 
@@ -19,7 +21,11 @@ func sumWorker(nums chan int, out chan int) {
 	out <- total
 }
 
-// Read integers from the file and calculate their sum concurrently.
+// Read integers from the file `fileName` and return sum of all values.
+// This function must launch `num` go routines running
+// `sumWorker` to find the sum of the values concurrently.
+// You should use `checkError` to handle potential errors.
+// Do NOT modify function signature.
 func sum(num int, fileName string) int {
 	if num <= 0 {
 		return 0
@@ -59,8 +65,10 @@ func sum(num int, fileName string) int {
 	return total
 }
 
-// Read a list of integers separated by whitespace from r.
-// DO NOT MODIFY THIS FUNCTION.
+// Read a list of integers separated by whitespace from `r`.
+// Return the integers successfully read with no error, or
+// an empty slice of integers and the error that occurred.
+// Do NOT modify this function.
 func readInts(r io.Reader) ([]int, error) {
 	scanner := bufio.NewScanner(r)
 	scanner.Split(bufio.ScanWords)
